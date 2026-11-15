@@ -1,0 +1,38 @@
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_headers {
+    name: "qti_kernel_headers",
+    vendor_available: true,
+    recovery_available: true,
+    export_include_dirs: ["."],
+}
+
+cc_library_headers {
+    name: "generated_kernel_headers",
+    vendor_available: true,
+    recovery_available: true,
+    export_include_dirs: ["."],
+}
+
+cc_library_headers {
+    name: "qti_display_kernel_headers",
+    vendor_available: true,
+    recovery_available: true,
+    export_include_dirs: ["display"],
+}
+
+cc_library_headers {
+    name: "audio_kernel_headers",
+    vendor_available: true,
+    recovery_available: true,
+    export_include_dirs: ["audio"],
+}
+
+cc_library_headers {
+    name: "qti_audio_kernel_uapi",
+    vendor_available: true,
+    recovery_available: true,
+    export_include_dirs: ["audio"],
+}
